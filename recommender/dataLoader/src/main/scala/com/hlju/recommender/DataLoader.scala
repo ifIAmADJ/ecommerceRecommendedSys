@@ -18,8 +18,8 @@ object DataLoader {
   val RATING_DATA_PATH = "recommender/dataLoader/src/main/resources/ratings.csv"
 
   // Mongodb 对应数据源的集合 (表) 名
-  val MONGODB_PRODUCT_COLLECTION = "product"
-  val MONGODB_RATINGS_COLLECTION = "ratings"
+  val MONGODB_PRODUCT_COLLECTION = "Product"
+  val MONGODB_RATING_COLLECTION = "Rating"
 
   def main(args: Array[String]): Unit = {
 
@@ -87,7 +87,7 @@ object DataLoader {
 
     ratingDF.write
       .option("uri",mongoConfig.uri)
-      .option("collection",MONGODB_RATINGS_COLLECTION)
+      .option("collection",MONGODB_RATING_COLLECTION)
       .mode("overwrite")
       .format("com.mongodb.spark.sql")
       .save()
@@ -102,6 +102,6 @@ object DataLoader {
   }
 }
 
-case class Product(productId: Int, name: String, imageURL: String, categories: String, tags: String)
+case class Product(productId: Int, name: String, imageUrl: String, categories: String, tags: String)
 case class Rating(userId: Int, productId: Int, score: Double, timestamp: Int)
 case class MongoConfig(uri: String, db: String)
