@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="dataLoader" />
         <module name="OfflineRecommender" />
+        <module name="OnlineRecommender" />
         <module name="statisticRecommender" />
       </profile>
     </annotationProcessing>

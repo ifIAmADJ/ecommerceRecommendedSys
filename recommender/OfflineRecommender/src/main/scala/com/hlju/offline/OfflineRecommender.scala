@@ -29,7 +29,6 @@ object OfflineRecommender {
     // 导入 SparkSession 的隐式转换内容。
     import spark.implicits._
 
-    // 导入 SparkSession 的隐式转换内容。
     implicit val mongoConfig: MongoConfig = MongoConfig(config("mongo.uri"), config("mongo.db"))
 
     // 读取 rating 数据类型
