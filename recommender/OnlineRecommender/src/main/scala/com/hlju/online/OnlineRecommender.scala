@@ -15,7 +15,7 @@ import redis.clients.jedis.Jedis
 import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
-object OnlineRecommender {
+object OnlineRecommender extends App {
 
   val STREAM_RECS = "StreamRecs"
   val PRODUCT_RECS = "ProductRecs"
@@ -69,7 +69,7 @@ object OnlineRecommender {
   // 定义 kafka 相关配置参数
   //创建到 Kafka 的连接
   val kafkaPara = Map(
-    "bootstrap.servers" -> "localhost:9092",
+    "bootstrap.servers" -> "hadoop100:9092",
     "key.deserializer" -> classOf[StringDeserializer],
     "value.deserializer" -> classOf[StringDeserializer],
     "group.id" -> "recommender",
@@ -82,6 +82,7 @@ object OnlineRecommender {
     ConsumerStrategies.Subscribe[String, String](Array(config("kafka.topic")), kafkaPara)
   )
 
+  // 注意，为了得到这样的数据，这依赖另一个模块对日志进行信息处理。
   // 对 Kafka 进行处理，产生评分流，这里定义为 userId|productId|score|timestamp
   val ratingStream: DStream[(Int, Int, Double, Int)] = kafkaStream.map {
     msg =>
@@ -198,26 +199,26 @@ object OnlineRecommender {
         (productId, (scoreList.map(_._2).sum / scoreList.length) + lg(increMap.getOrElse(productId, 1)) - lg(decreMap.getOrElse(productId, 1)))
     }.toArray.sortWith(_._2 > _._2)
 
+  }
 
-    // 传入两个商品的 productId，和相似度矩阵，然后返回相似度。
-    // 这个函数只是简单地查找
-    def getProductsSimScore(product1: Int, product2: Int,
-                            simProducts: collection.Map[Int, Map[Int, Double]]): Double = {
-      simProducts.get(product1) match {
-        case Some(sims) =>
-          sims.get(product2) match {
-            case Some(score) => score
-            case None => 0.0d
-          }
-        case None => 0.0d
-      }
+  // 传入两个商品的 productId，和相似度矩阵，然后返回相似度。
+  // 这个函数只是简单地查找
+  def getProductsSimScore(product1: Int, product2: Int,
+                          simProducts: collection.Map[Int, Map[Int, Double]]): Double = {
+    simProducts.get(product1) match {
+      case Some(sims) =>
+        sims.get(product2) match {
+          case Some(score) => score
+          case None => 0.0d
+        }
+      case None => 0.0d
     }
+  }
 
-    // 利用换底公式实现 lg 函数
-    def lg(m : Int):Double = {
-      val N = 10
-      math.log(m) / math.log(N)
-    }
+  // 利用换底公式实现 lg 函数
+  def lg(m : Int):Double = {
+    val N = 10
+    math.log(m) / math.log(N)
   }
 
   def saveDataToMongoDB(userId: Int, streamRecs: Array[(Int, Double)])(implicit mongoConfig: MongoConfig): Unit = {

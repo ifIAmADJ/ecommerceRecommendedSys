@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="businessServer:war" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a98219c2-bf58-4d39-a78e-2f04eab17621" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/OfflineRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/OfflineRecommender.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recommender/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/scala/com/hlju/online/OnlineRecommender.scala" beforeDir="false" afterPath="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/scala/com/hlju/online/OnlineRecommender.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,6 +23,8 @@
     <ignored path="$PROJECT_DIR$/recommender/statisticRecommender/target/" />
     <ignored path="$PROJECT_DIR$/recommender/OfflineRecommender/target/" />
     <ignored path="$PROJECT_DIR$/recommender/OnlineRecommender/target/" />
+    <ignored path="$PROJECT_DIR$/KafkaStreaming/target/" />
+    <ignored path="$PROJECT_DIR$/businessServer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +37,8 @@
       <file leaf-file-name="OnlineRecommender.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recommender/OnlineRecommender/src/main/scala/com/hlju/online/OnlineRecommender.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+            <state relative-caret-position="140">
+              <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
               <folding>
                 <element signature="e#25#72#0" expanded="true" />
               </folding>
@@ -37,82 +46,97 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/Product.class">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/domain/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="80">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OfflineRecommender.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/OfflineRecommender.scala">
+      <file leaf-file-name="ProductRecommendationRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/request/ProductRecommendationRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" selection-start-line="10" selection-end-line="11" />
+            <state relative-caret-position="40">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductRestApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/rest/ProductRestApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-140">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <element signature="e#26#59#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ALSTrainer.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/ALSTrainer.scala">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="40">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/service/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/application-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/KafkaStreaming/src/main/java/com/hlju/kafkaStream/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="29" column="104" selection-start-line="29" selection-start-column="104" selection-end-line="29" selection-end-column="104" />
               <folding>
-                <element signature="e#26#94#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Serializable.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/Serializable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-            </state>
-          </provider>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="Serializable.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/io/Serializable.java">
+      <file leaf-file-name="Recommendation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/recom/Recommendation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2900">
-              <caret line="168" column="17" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatisticsRecommender.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/src/main/scala/com/hlju/statistics/StatisticsRecommender.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2060">
-              <caret line="107" selection-start-line="107" selection-end-line="111" selection-end-column="13" />
-              <folding>
-                <element signature="e#29#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataLoader.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/scala/com/hlju/recommender/DataLoader.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2020">
-              <caret line="105" selection-start-line="105" selection-end-line="106" selection-end-column="47" />
-              <folding>
-                <element signature="e#30#77#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/dataLoader/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/recommender/dataLoader/pom.xml" />
@@ -132,7 +155,19 @@
         <option value="$PROJECT_DIR$/recommender/OnlineRecommender/pom.xml" />
         <option value="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/scala/com/hlju/online/XXX.scala" />
         <option value="$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/OfflineRecommender.scala" />
+        <option value="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/recommender/OnlineRecommender/src/main/scala/com/hlju/online/OnlineRecommender.scala" />
+        <option value="$PROJECT_DIR$/KafkaStreaming/pom.xml" />
+        <option value="$PROJECT_DIR$/KafkaStreaming/src/main/java/com/hlju/kafkaStream/Applicationa.java" />
+        <option value="$PROJECT_DIR$/KafkaStreaming/src/main/java/com/hlju/kafkaStream/LogProcessor.java" />
+        <option value="$PROJECT_DIR$/KafkaStreaming/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/businessServer/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/rest/ProductRestApi.java" />
+        <option value="$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/service/RecommenderService.java" />
+        <option value="$PROJECT_DIR$/businessServer/src/main/resources/application.xml" />
+        <option value="$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/application-servlet.xml" />
+        <option value="$PROJECT_DIR$/KafkaStreaming/src/main/java/com/hlju/kafkaStream/Application.java" />
       </list>
     </option>
   </component>
@@ -142,9 +177,48 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="businessServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="businessServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="businessServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="businessServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="deploy" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="businessServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="businessServer" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="war" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="dataLoader" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -175,10 +249,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="34" />
-    <option name="y" value="12" />
-    <option name="width" value="1450" />
-    <option name="height" value="981" />
+    <option name="x" value="590" />
+    <option name="y" value="5" />
+    <option name="width" value="1746" />
+    <option name="height" value="924" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -188,6 +262,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,242 +274,18 @@
             <path>
               <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
+              <item name="businessServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="dataLoader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="dataLoader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="dataLoader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="dataLoader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="dataLoader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="dataLoader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="offline" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OfflineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="online" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="OnlineRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerceRecommendedSys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerceRecommendedSys" type="462c0819:PsiDirectoryNode" />
-              <item name="recommender" type="462c0819:PsiDirectoryNode" />
-              <item name="statisticRecommender" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="KafkaStreaming" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,17 +295,18 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/视频讲解/尚硅谷大数据项目之电商推荐系统/3.代码/3.代码/ECommerceRecommendSystem" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\liJunhu\IdeaProjects\ecommerceRecommendedSys" />
+      <recent name="C:\Users\liJunhu\IdeaProjects\ecommerceRecommendedSys\KafkaStreaming\src\main\resources" />
       <recent name="C:\Users\liJunhu\IdeaProjects\ecommerceRecommendedSys\recommender\OnlineRecommender\src\main\resources" />
       <recent name="C:\Users\liJunhu\IdeaProjects\ecommerceRecommendedSys\recommender\OfflineRecommender\src\main\resources" />
       <recent name="C:\Users\liJunhu\IdeaProjects\ecommerceRecommendedSys\recommender\statisticRecommender\src\main\resources" />
-      <recent name="C:\Users\liJunhu\IdeaProjects\ecommerceRecommendedSys\recommender\dataLoader\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -468,7 +321,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ALSTrainer">
+  <component name="RunManager" selected="Application.OnlineRecommender">
     <configuration name="ALSTrainer" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.hlju.offline.ALSTrainer" />
       <module name="OfflineRecommender" />
@@ -480,13 +333,13 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration name="DataLoader" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.hlju.recommender.DataLoader" />
-      <module name="dataLoader" />
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hlju.kafkaStream.Application" />
+      <module name="KafkaStreaming" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hlju.recommender.*" />
+          <option name="PATTERN" value="com.hlju.kafkaStream.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -498,6 +351,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hlju.offline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="OnlineRecommender" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.hlju.online.OnlineRecommender" />
+      <module name="OnlineRecommender" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hlju.online.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -554,18 +418,154 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="businessServer:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_ecommerceRecommendedSys" />
+        <option name="HTTP_PORT" value="8088" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62478" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="businessServer:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.108" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_ecommerceRecommendedSys" />
+        <option name="HTTP_PORT" value="8088" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62478" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
     <list>
-      <item itemvalue="Application.DataLoader" />
+      <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="Application.StatisticsRecommender" />
       <item itemvalue="Application.OfflineRecommender" />
       <item itemvalue="Application.ALSTrainer" />
+      <item itemvalue="Application.OnlineRecommender" />
+      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ALSTrainer" />
+        <item itemvalue="Application.OnlineRecommender" />
         <item itemvalue="Application.OfflineRecommender" />
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.ALSTrainer" />
         <item itemvalue="Application.StatisticsRecommender" />
-        <item itemvalue="Application.DataLoader" />
       </list>
     </recent_temporary>
   </component>
@@ -583,41 +583,48 @@
       <workItem from="1611134870824" duration="8889000" />
       <workItem from="1611212023410" duration="13118000" />
       <workItem from="1611304346897" duration="7382000" />
-      <workItem from="1613644312029" duration="5822000" />
+      <workItem from="1613644312029" duration="6149000" />
+      <workItem from="1613737264617" duration="2392000" />
+      <workItem from="1613805862552" duration="9000" />
+      <workItem from="1613890964764" duration="24000" />
+      <workItem from="1615276989410" duration="10508000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46735000" />
+    <option name="totallyTimeSpent" value="59995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.12633263" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32897604" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.10607676" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45866665" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.5664488" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.053376906" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="ExcelReader" order="8" weight="0.11625148" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.23747277" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -638,240 +645,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/scala/com/hlju/recommender/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
-          <caret line="105" selection-start-line="105" selection-end-line="106" selection-end-column="47" />
-          <folding>
-            <element signature="e#30#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/ALSTrainer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="e#26#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/scala/com/hlju/recommender/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="104" column="65" selection-start-line="104" selection-start-column="48" selection-end-line="104" selection-end-column="65" />
-          <folding>
-            <element signature="e#30#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/src/main/scala/com/hlju/statistics/StatisticsRecommender.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#29#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/src/main/scala/com/hlju/statistics/StatisticsRecommender.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="e#29#62#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/scala/com/hlju/recommender/DataLoader.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding>
-            <element signature="e#30#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/recommender.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/scala/com/hlju/recommender.scala" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.1/spark-sql_2.11-2.1.1.jar!/org/apache/spark/sql/SparkSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/resources/products.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/resources/ratings.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/dataLoader/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/statisticRecommender/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.1/spark-sql_2.11-2.1.1.jar!/org/apache/spark/sql/Dataset.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.11/2.1.1/spark-mllib_2.11-2.1.1.jar!/org/apache/spark/ml/recommendation/ALS.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.11/2.1.1/spark-mllib_2.11-2.1.1-sources.jar!/org/apache/spark/mllib/recommendation/ALS.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -908,13 +681,6 @@
     <entry file="file://$PROJECT_DIR$/recommender/OnlineRecommender/OnlineRecommender.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="96" column="26" selection-start-line="30" selection-start-column="3" selection-end-line="96" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recommender/OnlineRecommender/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -928,9 +694,6 @@
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OnlineRecommender/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_241/src.zip!/java/io/Serializable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -973,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/ALSTrainer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#26#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recommender/dataLoader/src/main/scala/com/hlju/recommender/DataLoader.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2020">
@@ -993,10 +746,252 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OnlineRecommender/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/scala/com/hlju/offline/ALSTrainer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#26#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/OfflineRecommender.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recommender/OfflineRecommender/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaStreaming/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecommerceRecommendedSys.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaStreaming/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" selection-start-line="4" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/utils/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/utils/Configure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaStreaming/src/main/java/com/hlju/kafkaStream/LogProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/request/LoginUserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/service/RecommenderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-655">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/rest/UserRestApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/inline.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/vendor.bundle.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/log/agent.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-737" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/resources/application.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/resources/recommend.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/domain/Rating.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/recom/Recommendation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/model/request/ProductRecommendationRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/rest/ProductRestApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-140">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/java/com/hlju/business/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/businessServer/src/main/webapp/WEB-INF/application-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="59" column="11" lean-forward="true" selection-start-line="59" selection-start-column="11" selection-end-line="59" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/KafkaStreaming/src/main/java/com/hlju/kafkaStream/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="29" column="104" selection-start-line="29" selection-start-column="104" selection-end-line="29" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/recommender/OnlineRecommender/src/main/scala/com/hlju/online/OnlineRecommender.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+        <state relative-caret-position="140">
+          <caret line="74" column="32" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
           <folding>
             <element signature="e#25#72#0" expanded="true" />
           </folding>
@@ -1009,10 +1004,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>businessServer:war</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1020,7 +1017,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1056,12 +1053,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>OfflineRecommender</last-edited>
+          <last-edited>businessServer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
